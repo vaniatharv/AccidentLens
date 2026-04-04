@@ -2,6 +2,7 @@
 AccidentLens is a deep learning system that automatically detects road accidents in video footage. It combines **EfficientNetB0** (for spatial feature extraction per frame) with an **LSTM network** (for temporal pattern analysis across frames) to classify video clips as either **Accident** or **Normal Driving**.
 ---
 ## Table of Contents
+- [Mission](#mission)
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Pipeline](#pipeline)
@@ -10,6 +11,12 @@ AccidentLens is a deep learning system that automatically detects road accidents
 - [Usage](#usage)
 - [Model Training](#model-training)
 - [Prediction](#prediction)
+---
+## Mission
+AccidentLens is driven by a commitment to **saving lives through intelligent automation**. Road accidents claim millions of lives every year, and delayed detection is a key factor in poor emergency response outcomes. Our mission is to harness the power of deep learning to enable **real-time, automated accident detection** from video footage — reducing response times, supporting traffic management systems, and ultimately making roads safer for everyone.
+
+By combining state-of-the-art computer vision with temporal sequence modelling, AccidentLens aims to provide an accessible, accurate, and scalable tool that can be integrated into existing surveillance infrastructure with minimal friction.
+
 ---
 ## Overview
 Road accident detection is a critical component of intelligent transportation systems and public safety. AccidentLens automates this process by analyzing surveillance or dashcam video using a two-stage deep learning pipeline:
