@@ -3,6 +3,7 @@ AccidentLens is a deep learning system that automatically detects road accidents
 ---
 ## Table of Contents
 - [Mission](#mission)
+- [Features](#features)
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Pipeline](#pipeline)
@@ -16,6 +17,21 @@ AccidentLens is a deep learning system that automatically detects road accidents
 AccidentLens is driven by a commitment to **saving lives through intelligent automation**. Road accidents claim millions of lives every year, and delayed detection is a key factor in poor emergency response outcomes. Our mission is to harness the power of deep learning to enable **real-time, automated accident detection** from video footage — reducing response times, supporting traffic management systems, and ultimately making roads safer for everyone.
 
 By combining state-of-the-art computer vision with temporal sequence modelling, AccidentLens aims to provide an accessible, accurate, and scalable tool that can be integrated into existing surveillance infrastructure with minimal friction.
+
+---
+## Features
+
+### 1. 🎥 Automated Video Analysis
+AccidentLens processes raw video footage directly — no manual frame selection required. It automatically samples frames at regular intervals using OpenCV and feeds them through the deep learning pipeline, making it suitable for integration with live surveillance or dashcam feeds.
+
+### 2. 🧠 Hybrid CNN + LSTM Architecture
+The system uses a two-stage model: **EfficientNetB0** extracts rich spatial features from each frame, and a stacked **LSTM network** captures temporal patterns across the frame sequence. This combination allows the model to understand not just what a single frame looks like, but how the scene evolves over time — critical for distinguishing accidents from normal driving.
+
+### 3. 📊 Confidence-Scored Predictions
+Each prediction comes with a confidence score between 0 and 1. This allows downstream systems or operators to set custom thresholds and prioritise high-confidence alerts, reducing false positives in real-world deployments.
+
+### 4. ☁️ Google Colab & Drive Compatible
+The entire pipeline is packaged as a Google Colab notebook and designed to run with datasets stored in Google Drive. This means zero local setup is required — training, evaluation, and prediction can all be run in the cloud on free GPU resources.
 
 ---
 ## Overview
